@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/all.min.css">   
+    <link rel="stylesheet" href="caratula.html">
+    <link rel="stylesheet" href="galeria.html">
+    <link rel="stylesheet" href="videos.html">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <style>
+#contenedor{
+    width: 90%;
+    padding: 0px;
+}
+h1{
+    font-family: "Martian Mono", monospace;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px  black;
+}
+#cabecera{
+    position: fixed ;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;
+    height: 80px;
+    width: 1200px;
+    background-color: #ffffff;
+}
+#menu > ul {
+    display: flex;
+    flex-direction: row;   
+    list-style-type: none;
+    font-size: 10pt;
+    height: 100%;
+    font-family: "Martian Mono", monospace;
+}
+#menu a {
+    color: darkslategrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+#menu a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+}
+ #contenido {
+    padding:100px;
+    height: 50px;
+    margin-top: 10px;
+} 
+#contenido div{
+    margin:20px;
+}
+p{
+    font-weight: 100;
+    text-align: justify;
+}
+h2{
+    text-decoration: underline;
+    margin-bottom: 10px;
+    background-color: black;
+    color:white;
+    padding:10px;
+}
+#sociales{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+li{
+            list-style-type: none;
+            padding: 10px 15px;            
+        }
+        #sociales a{
+            color:rgb(255, 250, 250);
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            font-family: "Martian Mono", monospace;
+            font-size: x-large;     
+            background-color: black; 
+            border-radius: 200px;   
+        }
+        #fotos{
+            display: flex;
+            flex-direction: row;
+            font-family: "Martian Mono", monospace;
+            color: #ffffff;
+            text-shadow: 2px 2px 2px black;
+            
+        }
+        #fotos img{
+            width: 300px;
+            height: 180px;
+            margin: 10px;
+            box-shadow: 2px 2px rgb(0, 0, 0);
+        }
+        #img1{filter: grayscale(70%);}
+        #img2{filter: contrast(50%);}
+        #img3{filter: brightness(50%);}
+        #img4{filter: opacity(70%);}
+        #img5{filter: sepia(50%);}
+        #img6{filter: saturate(30%);}
+
+
+    </style>
+    <div id="contenedor">
+
+        <div id="cabecera">
+            <div>
+                <h1>Twisted Colossus</h1>
+            </div>                   
+            <div id="menu">
+                <ul>
+                  <li><a href="caratula.html"><i class="fa-solid fa-house"></i> INICIO</a></li>
+                  <li><a href="blog.html"><i class="fa-solid fa-file-lines"></i> BLOG</a></li>
+                  <li><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
+                  <li><a href="videos.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
+                </ul>
+            </div>            
+        </div>
+        
+        <div id="contenido">
+            <div id="fotos">
+                <div>IMAGEN 1<li><a title="¡Un pequeño vistazo!" href=""><img id="img1" src="img/1.png" alt=""></a></li></div>
+                <div>IMAGEN 2<li><a title="¡Un buen chapuzón!" href=""><img id="img2" src="img/2.jpg" alt=""></a></li></div>
+                <div>IMAGEN 3<li><a title="¡Un recorrido adrenalínico!" href=""><img id="img3" src="img/3.jpeg" alt=""></a></li></div>
+            </div>
+            <div id="fotos">
+                <div>IMAGEN 4<li><a title="¡Un recuerdo para toda la familia!" href=""><img id="img4" src="img/4.jpg" alt=""></a></li></div>
+                <div>IMAGEN 5<li><a title="¡Cerca del cielo!" href=""><img id="img5" src="img/5.jpg" alt=""></a></li></div>
+                <div>IMAGEN 6<li><a title="¡Esperamos su visita!" href=""><img id="img6" src="img/6.jpg" alt=""></a></li></div>
+            </div>
+            <div id="redes">
+                <ul id="sociales">
+                    <li><a title="¡Siguenos en Instagram!" target="_blank" href="https://www.instagram.com/portaventuraworld/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a title="¡Visitanos en TikTok!" target="_blank" href="https://www.tiktok.com/@portaventuraworld"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a title="¡Danos me gusta en Facebook!" target="_blank" href="https://www.facebook.com/portaventuraoficial"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a title="¡Siguenos en X!" target="_blank" href="https://x.com/Portaventura_ES"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

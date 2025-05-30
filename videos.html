@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/all.min.css">   
+    <link rel="stylesheet" href="caratula.html">
+    <link rel="stylesheet" href="galeria.html">
+    <link rel="stylesheet" href="videos.html">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    #principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+h1{
+    font-family: "Martian Mono", monospace;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px  black;
+}
+.title3{
+    color: crimson;
+    font-family: "Martian Mono", monospace;
+}
+.title4{
+    color: darkblue;
+    font-family: "Martian Mono", monospace;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#menu{
+    display: flex;
+    flex-direction: row;   
+    list-style-type: none;
+    font-size: 10pt;
+    height: 100%;
+    font-family: "Martian Mono", monospace;
+}
+#menu a{
+    color: darkslategrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+#menu a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+}
+#cabecera{
+    position: fixed ;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;
+    height: 80px;
+    width: 1200px;
+    background-color: #ffffff;
+}
+li{
+            list-style-type: none;
+            padding: 10px 15px;            
+        }
+#sociales{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+#sociales a{
+            color:rgb(255, 250, 250);
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            font-family: "Martian Mono", monospace;
+            font-size: x-large;     
+            background-color: black; 
+            border-radius: 200px;   
+        }
+</style>
+<body>
+    <div>
+        <header id="cabecera">
+            <h1>Twisted Colossus</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="caratula.html"><i class="fa-solid fa-house"></i> INICIO</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-file-lines"></i> BLOG</a></li>
+                    <li><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
+                    <li><a href="videos.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="principal">
+            <section>
+                <h2 class="title3">¡Una experiencia inolvidable!</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UzK37IqGnhw?si=6Kck5ppDNFfptRvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <h2 class="title4">¡Siente la verdadera adrenalina!</h2>
+                <iframe src="https://player.vimeo.com/video/78554609?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Halloween en PortAventura 2013"></iframe>
+            </section>
+        </main>
+    </div><br>
+    <div id="redes">
+                <ul id="sociales">
+                    <li><a title="¡Siguenos en Instagram!" target="_blank" href="https://www.instagram.com/portaventuraworld/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a title="¡Visitanos en TikTok!" target="_blank" href="https://www.tiktok.com/@portaventuraworld"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a title="¡Danos me gusta en Facebook!" target="_blank" href="https://www.facebook.com/portaventuraoficial"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a title="¡Siguenos en X!" target="_blank" href="https://x.com/Portaventura_ES"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+</body>
+</html>
